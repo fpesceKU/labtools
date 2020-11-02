@@ -139,7 +139,7 @@ for i in range(0, nbins):
        nhb = hblock[key]
        # printout
        if(nhb > 1):
-          log.write("   %12.6lf %12.6lf %12.6lf\n" % (fes, errf, (errf*math.sqrt(2.0/(nhb-1)))))
+          log.write("   %12.6lf %12.6lf %12.6lf\n" % (fes, errf, (errf/math.sqrt(2.0*(nhb-1)))))
        else:
           log.write("   %12.6lf %12.6lf     Infinity\n" % (fes, errf))
     else:
